@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px solid hotpink;
+}
+
+:root {
+  --basicBitchBlack: rgba(18, 18, 18, 1);
+  --basicBitchWhite: rgba(235, 235, 235, 1);
+  --greyBgLight: rgba(237, 237, 237, 1);
+  --greyBgDark: rgba(196, 196, 196, 1);
+  --greyBgVideo: rgba(171, 171, 171, 1);
+  --navBg: rgba(143, 143, 143, 1);
+  --cardPriceButton: rgba(215, 215, 215, 1);
+}
+
+html {
+  background-color: var(--basicBitchBlack);
+  color: var(--basicBitchWhite);
+}
