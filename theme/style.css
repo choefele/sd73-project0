@@ -27,4 +27,5 @@
 html {
   background-color: var(--basicBitchBlack);
   color: var(--basicBitchWhite);
+  scroll-behavior: smooth;
 }
