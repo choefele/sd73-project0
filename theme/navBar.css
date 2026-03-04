@@ -1,8 +1,7 @@
-
-
 header {
   background-color: var(--navBg);
-  height: 10vw;
+  height: 142px;
+  width: 1440px;
 }
 
 a {
@@ -17,9 +16,13 @@ a:hover {
 #navBar > li > a {
   color: var(--basicBitchBlack);
   text-decoration: none;
-  border: 2px solid black;
-  padding: 3px 2px;
+  /* border: 2px solid black; */
+  font-size: 28px;
+  padding: 5px 10px;
   background-color: var(--basicBitchWhite);
+  /* position: absolute; */
+  /* top: 7%; */
+  /* transform: translateY(-10%); */
 }
 #navBar {
   list-style: none;
@@ -28,7 +31,10 @@ a:hover {
   height: 100%;
   justify-content: flex-start;
   background-color: var(--navBg);
+  align-items: center;
 }
 #navBar > li:first-child {
   margin-right: auto;
+  margin-left: 5rem;
+  padding: 8px 20px;
 }
