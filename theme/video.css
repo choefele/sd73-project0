@@ -1,0 +1,30 @@
+#videoSection {
+  height: 563px;
+  background-color: var(--greyBgVideo);
+  color: var(--basicBitchBlack);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+#videoText {
+  font-size: 48px;
+  margin-top: 3.5rem;
+}
+
+#videoBox {
+  width: 717px;
+  height: 340px;
+  display: block;
+  margin-top: 1.5rem;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+#videoBox img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
