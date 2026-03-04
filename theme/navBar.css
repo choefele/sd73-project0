@@ -27,7 +27,18 @@ a:hover {
   font-size: 26px;
   padding: 18px 30px;
   background-color: var(--basicBitchWhite);
-  /* border: 2px solid black; */
+  /* seems redundent at first, but these borders are what keeping the UI from jumping around when the hover is in effect */
+  border-top: 1.5px inset var(--transparent);
+  border-left: 1.5px inset var(--transparent);
+  border-bottom: 1.5px inset var(--transparent);
+  border-right: 1.5px inset var(--transparent);
+}
+
+#navBar > li > a:hover {
+  border-top: 1.5px inset var(--basicBitchBlack);
+  border-left: 1.5px inset var(--basicBitchBlack);
+  border-bottom: 1.5px inset var(--basicBitchWhite);
+  border-right: 1.5px inset var(--basicBitchWhite);
 }
 
 #navBar > li > a#logo {

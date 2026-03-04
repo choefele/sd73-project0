@@ -18,6 +18,7 @@
   --greyBgVideo: rgba(171, 171, 171, 1);
   --navBg: rgba(143, 143, 143, 1);
   --cardPriceButton: rgba(215, 215, 215, 1);
+  --transparent: rgba(0, 0, 0, 0);
 }
 
 html {
