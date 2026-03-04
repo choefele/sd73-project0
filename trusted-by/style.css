@@ -1,4 +1,23 @@
 #trustedBySection {
   background-color: var(--greyBgLight);
   color: var(--basicBitchBlack);
+  padding: 1rem;
+
+  p {
+    text-align: center;
+    font-size: 2em;
+    padding: 1rem;
+  }
+
+  .logoRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem;
+
+    img {
+      flex: 0 1 auto;
+    }
+  }
 }
