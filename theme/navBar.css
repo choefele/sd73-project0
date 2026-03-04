@@ -16,10 +16,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: orange;
-}
-
 #navBar > li > a {
   display: block;
   color: var(--basicBitchBlack);
@@ -39,6 +35,7 @@ a:hover {
   border-left: 1.5px inset var(--basicBitchBlack);
   border-bottom: 1.5px inset var(--basicBitchWhite);
   border-right: 1.5px inset var(--basicBitchWhite);
+  background-color: var(--cardPriceButton);
 }
 
 #navBar > li > a#logo {
