@@ -1,9 +1,13 @@
+@import url("./navBar.css");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 1px solid hotpink;
 }
+
+
 
 :root {
   --basicBitchBlack: rgba(18, 18, 18, 1);
