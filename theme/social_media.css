@@ -1,0 +1,40 @@
+#socialMediaSection {
+  background-color: var(--greyBgLight);
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#socialMediaSection h2 {
+  text-align: center;
+  color: var(--basicBitchBlack);
+  font-size: 36px;
+  font-weight: 400;
+}
+
+#navLower {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+#navLower a {
+  font-weight: lighter;
+}
+
+.socialRow {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.socialRow img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
