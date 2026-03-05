@@ -1,0 +1,28 @@
+@media (max-width: 600px) {
+  header {
+    height: auto;
+    align-items: flex-start;
+  }
+  #navBar {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 1rem;
+    row-gap: 0.5rem;
+    column-gap: 0.2rem;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+  }
+
+  #navBar > li:first-child {
+    flex: 0 0 100%;
+    margin-right: auto;
+    margin-top: 0.3rem;
+  }
+
+  #navBar > li > a {
+    padding: 0.1rem 0.2rem;
+    font-size: 24px;
+    text-align: center;
+  }
+}
