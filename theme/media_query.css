@@ -1,8 +1,15 @@
-@media (max-width: 1000px) {
+@media (max-width: 1000px) { 
   header {
     height: auto;
     align-items: flex-start;
   }
+  p,
+  h1,
+  h2,
+  a {
+    font-weight: lighter;
+  }
+
   #navBar {
     display: flex;
     flex-wrap: wrap;
@@ -26,6 +33,16 @@
     }
   }
 
+<<<<<<< dev/conflict-merge
+  .logoRow {
+    flex-wrap: wrap;
+  }
+  .logoRow img {
+    width: 8rem;
+  }
+
+  
+=======
   #trustedBySection {
     .logoRow {
       flex-wrap: wrap;
@@ -35,6 +52,7 @@
     }
   }
 
+>>>>>>> main
   #videoSection {
     #videoText {
       font-size: 32px;
@@ -42,12 +60,52 @@
     #videoBox {
       height: 65%;
       width: 75%;
+<<<<<<< dev/conflict-merge
+  
+=======
 
+>>>>>>> main
       img {
         width: 100%;
         object-fit: contain;
       }
     }
+<<<<<<< dev/conflict-merge
+  }
+  
+  #whyUsSection {
+    h2 {
+      margin-bottom: 3rem;
+      font-weight: lighter;
+      font-size: 1.7rem;
+    }
+  
+    .circleGrid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  
+    figcaption {
+      font-size: 16px;
+      width: 100%;
+      max-width: 260px;
+      white-space: normal; /* default, but explicit */
+      overflow-wrap: anywhere; /* breaks long words/strings */
+      hyphens: auto;
+    }
+  }
+  
+  #priceSection {
+    .cardRow {
+      grid-template-columns: 1fr;
+    }
+    .cardLong.featured {
+      transform: none;
+    }
+  }
+
+
+=======
   }
 
   #whyUsSection {
@@ -70,4 +128,5 @@
       transform: none;
     }
   }
+>>>>>>> main
 }
