@@ -5,10 +5,13 @@
   align-items: stretch;
   padding: 60px 20px;
   flex-wrap: wrap;
+  background-color: var(--greyBgDark);
 }
 
 #cardSquare,
 #cardLongRounded {
+  color: black;
+  background-color: var(--greyBgLight);
   border: 1px solid #ddd;
   padding: 24px;
   border-radius: 14px;
