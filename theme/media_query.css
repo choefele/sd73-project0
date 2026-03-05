@@ -32,4 +32,18 @@
   #trustedBySection .logoRow img {
     width: 8rem;
   }
+
+  #videoText {
+    font-size: 32px;
+  }
+
+  #videoBox {
+    height: 65%;
+    width: 75%;
+  }
+
+  #videoBox img {
+    width: 100%;
+    object-fit: contain;
+  }
 }
