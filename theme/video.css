@@ -6,27 +6,27 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-}
 
-#videoText {
-  font-size: 48px;
-  margin-top: 3.5rem;
-}
+  #videoText {
+    font-size: 48px;
+    margin-top: 3.5rem;
+  }
 
-#videoBox {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-top: 1.5rem;
-  overflow: hidden;
-  border-radius: 12px;
-  display: flex;
-  justify-content: center;
-}
+  #videoBox {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1.5rem;
+    overflow: hidden;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
 
-#videoBox img {
-  width: 717px;
-  height: 340px;
-  display: block;
-  object-fit: cover;
+    a img {
+      width: 717px;
+      height: 340px;
+      display: block;
+      object-fit: cover;
+    }
+  }
 }

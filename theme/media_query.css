@@ -12,48 +12,62 @@
     justify-content: space-around;
     align-items: center;
     height: auto;
+
+    li:first-child {
+      flex: 0 0 100%;
+      margin-right: auto;
+      margin-top: 0.3rem;
+    }
+
+    li > a {
+      padding: 0.1rem 0.7rem;
+      font-size: 24px;
+      text-align: center;
+    }
   }
 
-  #navBar > li:first-child {
-    flex: 0 0 100%;
-    margin-right: auto;
-    margin-top: 0.3rem;
+  #trustedBySection {
+    .logoRow {
+      flex-wrap: wrap;
+    }
+    .logoRow img {
+      width: 8rem;
+    }
   }
 
-  #navBar > li > a {
-    padding: 0.1rem 0.7rem;
-    font-size: 24px;
-    text-align: center;
+  #videoSection {
+    #videoText {
+      font-size: 32px;
+    }
+    #videoBox {
+      height: 65%;
+      width: 75%;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
   }
 
-  #trustedBySection .logoRow {
-    flex-wrap: wrap;
-  }
-  #trustedBySection .logoRow img {
-    width: 8rem;
+  #whyUsSection {
+    h2 {
+      margin-bottom: 3rem;
+      font-weight: lighter;
+    }
+
+    .circleGrid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 
-  #videoText {
-    font-size: 32px;
-  }
-
-  #videoBox {
-    height: 65%;
-    width: 75%;
-  }
-
-  #videoBox img {
-    width: 100%;
-    object-fit: contain;
-  }
-
-  #whyUsSection h2 {
-    margin-bottom: 3rem;
-    font-weight: lighter;
-  }
-
-  #whyUsSection .circleGrid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  #priceSection {
+    .cardRow {
+      grid-template-columns: 1fr;
+    }
+    .cardLong.featured {
+      transform: none;
+    }
   }
 }
