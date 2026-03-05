@@ -46,4 +46,14 @@
     width: 100%;
     object-fit: contain;
   }
+
+  #whyUsSection h2 {
+    margin-bottom: 3rem;
+    font-weight: lighter;
+  }
+
+  #whyUsSection .circleGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
