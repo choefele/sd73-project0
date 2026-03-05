@@ -1,0 +1,37 @@
+#appFeaturesSection {
+  background-color: var(--greyBgDark);
+  color: var(--basicBitchBlack);
+  padding: 2rem;
+
+  h2 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0.5rem;
+  }
+
+  .circleGrid {
+    display: flex;
+    gap: 1rem;
+
+    figure {
+      min-width: 0;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        padding: 1.5rem;
+      }
+
+      figcaption {
+        text-align: center;
+        font-size: 1em;
+      }
+    }
+  }
+}
