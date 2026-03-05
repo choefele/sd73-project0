@@ -14,8 +14,8 @@
 }
 
 #videoBox {
-  width: 717px;
-  height: 340px;
+  width: 100%;
+  height: auto;
   display: block;
   margin-top: 1.5rem;
   overflow: hidden;

@@ -1,0 +1,5 @@
+#appFeaturesSection {
+  background-color: var(--greyBgDark);
+  color: var(--basicBitchBlack);
+  padding: 1rem;
+}
