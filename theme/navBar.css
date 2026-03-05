@@ -4,42 +4,16 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-}
 
-header > nav {
-  flex: 1;
-  width: 100%;
+  nav {
+    flex: 1;
+    width: 100%;
+  }
 }
 
 a {
   color: var(--basicBitchBlack);
   text-decoration: none;
-}
-
-#navBar > li > a {
-  display: block;
-  color: var(--basicBitchBlack);
-  text-decoration: none;
-  font-size: 26px;
-  padding: 18px 30px;
-  background-color: var(--basicBitchWhite);
-  /* seems redundent at first, but these borders are what keeping the UI from jumping around when the hover is in effect */
-  border-top: 1.5px inset var(--transparent);
-  border-left: 1.5px inset var(--transparent);
-  border-bottom: 1.5px inset var(--transparent);
-  border-right: 1.5px inset var(--transparent);
-}
-
-#navBar > li > a:hover {
-  border-top: 1.5px inset var(--basicBitchBlack);
-  border-left: 1.5px inset var(--basicBitchBlack);
-  border-bottom: 1.5px inset var(--basicBitchWhite);
-  border-right: 1.5px inset var(--basicBitchWhite);
-  background-color: var(--cardPriceButton);
-}
-
-#navBar > li > a#logo {
-  padding: 20px 24px;
 }
 
 #navBar {
@@ -52,7 +26,32 @@ a {
   justify-content: flex-start;
   align-items: center;
   background-color: var(--navBg);
-}
-#navBar > li:first-child {
-  margin-right: auto;
+
+  li > a {
+    display: block;
+    color: var(--basicBitchBlack);
+    text-decoration: none;
+    font-size: 26px;
+    padding: 18px 30px;
+    background-color: var(--basicBitchWhite);
+    /* seems redundent at first, but these borders are what keeping the UI from jumping around when the hover is in effect */
+    border-top: 1.5px inset var(--transparent);
+    border-left: 1.5px inset var(--transparent);
+    border-bottom: 1.5px inset var(--transparent);
+    border-right: 1.5px inset var(--transparent);
+  }
+
+  li > a:hover {
+    border-top: 1.5px inset var(--basicBitchBlack);
+    border-left: 1.5px inset var(--basicBitchBlack);
+    border-bottom: 1.5px inset var(--basicBitchWhite);
+    border-right: 1.5px inset var(--basicBitchWhite);
+    background-color: var(--cardPriceButton);
+  }
+  li > a#logo {
+    padding: 20px 24px;
+  }
+  li:first-child {
+    margin-right: auto;
+  }
 }

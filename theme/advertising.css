@@ -17,12 +17,11 @@
   border-radius: 14px;
   width: 100%;
   max-width: 420px;
-}
 
-#cardSquare button,
-#cardLongRounded button {
-  padding: 10px 14px;
-  cursor: pointer;
+  button {
+    padding: 10px 14px;
+    cursor: pointer;
+  }
 }
 
 #cardSquare h1 {
