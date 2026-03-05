@@ -1,4 +1,6 @@
 #whyUsSection {
+  background-color: var(--basicBitchWhite);
+  color: var(--basicBitchBlack);
   padding: 60px 20px;
   text-align: center;
 
@@ -29,4 +31,46 @@
     margin: 0;
     line-height: 1.4;
   }
+}
+#whyUsSection h2 {
+  margin-bottom: 30px;
+  font-size: 3em;
+}
+
+#whyUsSection .circleGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* each item */
+#whyUsSection figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  margin: 0;
+}
+
+/* circle image */
+#whyUsSection img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 0 14px 0;
+}
+
+/* caption */
+#whyUsSection figcaption {
+  width: 260px;
+  min-height: 72px;      /* keep */
+  margin: 12px auto 0;
+  display: block;        /* remove flex */
+  text-align: center;
+  line-height: 1.4;
+  font-size: 22px;
 }
