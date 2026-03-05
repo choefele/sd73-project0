@@ -40,6 +40,15 @@
     width: 8rem;
   }
 
+  #trustedBySection {
+    .logoRow {
+      flex-wrap: wrap;
+    }
+    .logoRow img {
+      width: 8rem;
+    }
+  }
+
   #videoSection {
     #videoText {
       font-size: 32px;
@@ -74,6 +83,27 @@
       white-space: normal; /* default, but explicit */
       overflow-wrap: anywhere; /* breaks long words/strings */
       hyphens: auto;
+    }
+  }
+
+  #priceSection {
+    .cardRow {
+      grid-template-columns: 1fr;
+    }
+    .cardLong.featured {
+      transform: none;
+    }
+  }
+
+  #whyUsSection {
+    h2 {
+      margin-bottom: 3rem;
+      font-weight: lighter;
+    }
+
+    .circleGrid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 
