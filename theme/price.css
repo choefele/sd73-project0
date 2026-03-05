@@ -1,34 +1,40 @@
 #priceSection {
   padding: 70px 20px;
   text-align: center;
-  max-width: 1100px;
-  margin: 0 auto;
+  background-color: var(--greyBgDark);
+  color: var(--basicBitchBlack);
+  width: 100%;
 }
 
 #priceSection h2 {
+  font-size: 3em;
   margin-bottom: 10px;
 }
 
 #priceSection .priceIntro {
-  opacity: 0.9;
-  max-width: 720px;
-  margin: 0 auto 34px;
-  line-height: 1.5;
+  font-size: 20px;
+  margin: 10px auto 40px auto;
+  line-height: 1.4;
+  text-align: center;
+  font-weight: 400;
+  color: var(--basicBitchBlack);
 }
 
 #priceSection .cardRow {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 360px);
+  gap: 32px;
+  justify-content: center;
 }
 
 #priceSection .cardLong {
   position: relative;
-  border: 1px solid rgba(235, 235, 235, 0.25);
+  border: 1px solid var(--greyBgLight);
   border-radius: 16px;
   padding: 22px 18px 18px;
   text-align: left;
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--basicBitchWhite);
+  color: var(--basicBitchBlack);
 }
 
 #priceSection .cardLong .planTop {
@@ -44,8 +50,8 @@
   border-radius: 12px;
   display: grid;
   place-items: center;
-  border: 1px solid rgba(235, 235, 235, 0.25);
-  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--greyBgLight);
+  background: var(--greyBgLight);
   font-size: 18px;
 }
 
@@ -66,6 +72,7 @@
   line-height: 1;
   font-weight: 700;
   letter-spacing: -0.03em;
+  color: var(--basicBitchBlack);
 }
 
 #priceSection .cardLong .currency {
@@ -105,21 +112,21 @@
 
 #priceSection .planBtn {
   width: 100%;
-  border: 1px solid rgba(235, 235, 235, 0.35);
-  background: rgba(235, 235, 235, 0.08);
-  color: var(--basicBitchWhite);
+  border: 1px solid var(--greyBgLight);
+  background: var(--cardPriceButton);
+  color: var(--basicBitchBlack);
   padding: 12px 14px;
   border-radius: 12px;
   cursor: pointer;
 }
 
 #priceSection .planBtn:hover {
-  background: rgba(235, 235, 235, 0.14);
+  background: var(--greyBgLight);
 }
 
 #priceSection .cardLong.featured {
-  border-color: rgba(235, 235, 235, 0.55);
-  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--greyBgLight);
+  background: var(--basicBitchWhite);
   transform: translateY(-6px);
 }
 
@@ -130,8 +137,8 @@
   font-size: 12px;
   padding: 6px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(235, 235, 235, 0.35);
-  background: rgba(235, 235, 235, 0.1);
+  border: 1px solid var(--greyBgLight);
+  background: var(--greyBgLight);
 }
 
 /* responsive */
