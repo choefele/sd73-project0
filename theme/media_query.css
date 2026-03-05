@@ -33,6 +33,7 @@
     }
   }
 
+<<<<<<< dev/conflict-merge
   .logoRow {
     flex-wrap: wrap;
   }
@@ -41,6 +42,17 @@
   }
 
   
+=======
+  #trustedBySection {
+    .logoRow {
+      flex-wrap: wrap;
+    }
+    .logoRow img {
+      width: 8rem;
+    }
+  }
+
+>>>>>>> main
   #videoSection {
     #videoText {
       font-size: 32px;
@@ -48,12 +60,17 @@
     #videoBox {
       height: 65%;
       width: 75%;
+<<<<<<< dev/conflict-merge
   
+=======
+
+>>>>>>> main
       img {
         width: 100%;
         object-fit: contain;
       }
     }
+<<<<<<< dev/conflict-merge
   }
   
   #whyUsSection {
@@ -88,4 +105,28 @@
   }
 
 
+=======
+  }
+
+  #whyUsSection {
+    h2 {
+      margin-bottom: 3rem;
+      font-weight: lighter;
+    }
+
+    .circleGrid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  #priceSection {
+    .cardRow {
+      grid-template-columns: 1fr;
+    }
+    .cardLong.featured {
+      transform: none;
+    }
+  }
+>>>>>>> main
 }
