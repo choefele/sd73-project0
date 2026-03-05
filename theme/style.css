@@ -6,6 +6,7 @@
 @import url("./price.css");
 @import url("./social_media.css");
 @import url("./appFeatures.css");
+@import url("./media_query.css");
 
 * {
   box-sizing: border-box;
