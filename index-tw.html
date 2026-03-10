@@ -39,29 +39,59 @@
 
     <main>
       <div id="page0">
-        <div id="advertisingSection">
-          <div id="cardSquare">
-            <button>#1 Editors Choice App of 2020</button>
-            <h1>Manage your work in one place</h1>
-            <p>
-              Plan tasks, track progress, and stay focused with a clean, simple
-              workflow.
-            </p>
-            <button>Try for free</button>
-          </div>
+<div
+  id="advertisingSection"
+  class="mx-auto flex min-h-[700px] max-w-[1440px] items-center justify-center gap-10 px-6 py-16 lg:px-20"
+>
+  <div
+    id="cardSquare"
+    class="flex w-full max-w-[520px] flex-col justify-center rounded-[32px] bg-basicBitchBlack p-10 text-basicBitchWhite shadow-lg lg:h-[520px]"
+  >
+    <button
+      class="mb-6 w-fit rounded-full bg-basicBitchWhite/10 px-4 py-2 text-sm font-medium text-basicBitchWhite"
+    >
+      #1 Editors Choice App of 2020
+    </button>
 
-          <div id="cardLongRounded">
-            <img
-              class="thumbnailSquare"
-              src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=70"
-              alt="App demo preview"
-            />
-            <h3>Quick start demo</h3>
-            <p>WBS Coding School</p>
-            <p>See how the app helps you organize your day in minutes.</p>
-            <button>Continue</button>
-          </div>
-        </div>
+    <h1 class="mb-6 text-4xl font-bold leading-tight lg:text-6xl">
+      Manage your work in one place
+    </h1>
+
+    <p class="mb-8 max-w-[420px] text-base leading-7 text-basicBitchWhite/80 lg:text-lg">
+      Plan tasks, track progress, and stay focused with a clean, simple
+      workflow.
+    </p>
+
+    <button
+      class="w-fit rounded-full bg-basicBitchWhite px-6 py-3 text-sm font-semibold text-basicBitchBlack transition hover:scale-105"
+    >
+      Try for free
+    </button>
+  </div>
+
+  <div
+    id="cardLongRounded"
+    class="flex w-full max-w-[360px] flex-col overflow-hidden rounded-[32px] bg-basicBitchWhite p-5 text-basicBitchBlack shadow-lg lg:h-[520px]"
+  >
+    <img
+      class="thumbnailSquare mb-5 h-[220px] w-full rounded-[24px] object-cover"
+      src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=70"
+      alt="App demo preview"
+    />
+
+    <h3 class="mb-2 text-2xl font-semibold">Quick start demo</h3>
+    <p class="mb-4 text-sm text-basicBitchBlack/60">WBS Coding School</p>
+    <p class="mb-6 text-base leading-7 text-basicBitchBlack/80">
+      See how the app helps you organize your day in minutes.
+    </p>
+
+    <button
+      class="mt-auto w-fit rounded-full bg-basicBitchBlack px-6 py-3 text-sm font-semibold text-basicBitchWhite transition hover:scale-105"
+    >
+      Continue
+    </button>
+  </div>
+</div>
 
         <div
           class="bg-greyBgLight text-basicBitchBlack p-4"
