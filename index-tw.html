@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Reconstruction of a Figma Design</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      * {
+        /* border: 1px solid hotpink; */
+      }
+
+      @theme {
+        --font-sans: "Roboto", sans-serif;
+
+        --color-basicBitchBlack: rgba(18, 18, 18, 1);
+        --color-basicBitchWhite: rgba(235, 235, 235, 1);
+        --color-greyBgLight: rgba(237, 237, 237, 1);
+        --color-greyBgDark: rgba(196, 196, 196, 1);
+        --color-greyBgVideo: rgba(171, 171, 171, 1);
+        --color-navBg: rgba(143, 143, 143, 1);
+        --color-cardPriceButton: rgba(215, 215, 215, 1);
+        --color-transparent: rgba(0, 0, 0, 0);
+      }
+    </style>
   </head>
-  <body>
+  <body class="bg-greyBgDark">
     <header>
       <nav>
         <ul id="navBar">
