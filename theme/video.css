@@ -1,7 +1,7 @@
 #videoSection {
   height: 563px;
   background-color: var(--greyBgVideo);
-  color: var(--basicBitchBlack);
+  color: var(--basicBitchWhite);
   display: flex;
   flex-direction: column;
   justify-content: start;
