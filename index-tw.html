@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       * {
-        /* border: 1px solid hotpink; */
+        border: 1px solid hotpink;
       }
 
       @theme {
@@ -25,10 +25,15 @@
     </style>
   </head>
   <body class="bg-greyBgDark">
-    <header>
+    <header class="bg-navBg h-[142px] w-full flex items-center">
       <nav>
-        <ul id="navBar">
-          <li><a id="logo" href="#">Your cool product</a></li>
+        <ul
+          id="navBar"
+          class="flex w-full gap-[0rem_1rem] h-full justify-center bg--navBg px-[3.7rem] list-none"
+        >
+          <li>
+            <a class="px-20 py-24" href="#">Your cool product</a>
+          </li>
           <li><a href="#advertisingSection">Home</a></li>
           <li><a href="#featuresSection">Features</a></li>
           <li><a href="#priceSection">Prices</a></li>
