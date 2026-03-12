@@ -1,11 +1,11 @@
-@import url("./navBar.css");
-@import url("./trustedBy.css");
-@import url("./whyUs.css");
+@import url("./nav_bar.css");
+@import url("./trusted_by.css");
+@import url("./why_us.css");
 @import url("./advertising.css");
 @import url("./video.css");
 @import url("./price.css");
 @import url("./social_media.css");
-@import url("./appFeatures.css");
+@import url("./app_features.css");
 @import url("./media_query.css");
 
 * {
