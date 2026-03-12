@@ -39,27 +39,57 @@
 
     <main>
       <div id="page0">
-        <div id="advertisingSection">
-          <div id="cardSquare">
-            <button>#1 Editors Choice App of 2020</button>
-            <h1>Manage your work in one place</h1>
-            <p>
+        <div
+          id="advertisingSection"
+          class="mx-auto flex max-w-7xl flex-col items-center justify-center gap-10 px-6 py-16 lg:flex-row lg:items-stretch"
+        >
+          <div
+            id="cardSquare"
+            class="flex w-full max-w-xl flex-col rounded-3xl bg-neutral-950 p-10 text-neutral-50 shadow-lg"
+          >
+            <button
+              class="mb-8 w-fit rounded-full bg-neutral-800 px-4 py-2 text-sm font-medium"
+            >
+              #1 Editors Choice App of 2020
+            </button>
+
+            <h1 class="mb-8 text-5xl font-bold leading-tight lg:text-6xl">
+              Manage your work in one place
+            </h1>
+
+            <p class="mb-10 max-w-md text-lg leading-8 text-neutral-200">
               Plan tasks, track progress, and stay focused with a clean, simple
               workflow.
             </p>
-            <button>Try for free</button>
+
+            <button
+              class="mt-auto w-fit rounded-full bg-neutral-100 px-6 py-3 text-base font-semibold text-neutral-950"
+            >
+              Try for free
+            </button>
           </div>
 
-          <div id="cardLongRounded">
+          <div
+            id="cardLongRounded"
+            class="flex w-full max-w-sm flex-col rounded-3xl bg-neutral-100 p-5 text-neutral-950 shadow-lg"
+          >
             <img
-              class="thumbnailSquare"
+              class="mb-5 h-56 w-full rounded-3xl object-cover"
               src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=70"
               alt="App demo preview"
             />
-            <h3>Quick start demo</h3>
-            <p>WBS Coding School</p>
-            <p>See how the app helps you organize your day in minutes.</p>
-            <button>Continue</button>
+
+            <h3 class="mb-2 text-3xl font-bold">Quick start demo</h3>
+            <p class="mb-5 text-base text-neutral-500">WBS Coding School</p>
+            <p class="mb-8 text-lg leading-8 text-neutral-800">
+              See how the app helps you organize your day in minutes.
+            </p>
+
+            <button
+              class="mt-auto w-fit rounded-full bg-neutral-950 px-6 py-3 text-base font-semibold text-neutral-50"
+            >
+              Continue
+            </button>
           </div>
         </div>
 
@@ -97,6 +127,7 @@
           </div>
         </div>
       </div>
+
       <div id="page1">
         <div id="videoSection">
           <h2 id="videoText">Check out our video:</h2>
@@ -163,137 +194,229 @@
               </figure>
             </div>
           </div>
+
           <div id="page2">
-            <!-- todo: bg=greyBgLight -->
-            <div id="whyUsSection">
-              <h2>Why you should choose our app</h2>
+            <div id="whyUsSection" class="bg-neutral-200 px-6 py-16">
+              <div class="mx-auto max-w-7xl">
+                <h2
+                  class="mb-12 text-center text-4xl font-bold text-neutral-950"
+                >
+                  Why you should choose our app
+                </h2>
 
-              <div class="circleGrid">
-                <figure>
-                  <img
-                    src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
-                    alt="Fast performance"
-                  />
-                  <figcaption>
-                    Fast performance. Our app works quickly and efficiently.
-                  </figcaption>
-                </figure>
+                <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                  <figure class="rounded-3xl bg-neutral-100 p-5 shadow-md">
+                    <img
+                      class="mb-4 h-48 w-full rounded-2xl object-cover"
+                      src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+                      alt="Fast performance"
+                    />
+                    <figcaption class="text-base leading-7 text-neutral-800">
+                      Fast performance. Our app works quickly and efficiently.
+                    </figcaption>
+                  </figure>
 
-                <figure>
-                  <img
-                    src="https://images.unsplash.com/photo-1551434678-e076c223a692"
-                    alt="Easy to use"
-                  />
-                  <figcaption>Easy to use interface for all users.</figcaption>
-                </figure>
+                  <figure class="rounded-3xl bg-neutral-100 p-5 shadow-md">
+                    <img
+                      class="mb-4 h-48 w-full rounded-2xl object-cover"
+                      src="https://images.unsplash.com/photo-1551434678-e076c223a692"
+                      alt="Easy to use"
+                    />
+                    <figcaption class="text-base leading-7 text-neutral-800">
+                      Easy to use interface for all users.
+                    </figcaption>
+                  </figure>
 
-                <figure>
-                  <img
-                    src="https://images.unsplash.com/photo-1563986768609-322da13575f3"
-                    alt="Reliable and secure"
-                  />
-                  <figcaption>Reliable and secure platform.</figcaption>
-                </figure>
+                  <figure class="rounded-3xl bg-neutral-100 p-5 shadow-md">
+                    <img
+                      class="mb-4 h-48 w-full rounded-2xl object-cover"
+                      src="https://images.unsplash.com/photo-1563986768609-322da13575f3"
+                      alt="Reliable and secure"
+                    />
+                    <figcaption class="text-base leading-7 text-neutral-800">
+                      Reliable and secure platform.
+                    </figcaption>
+                  </figure>
 
-                <figure>
-                  <img
-                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
-                    alt="Modern design"
-                  />
-                  <figcaption>Modern design and smooth experience.</figcaption>
-                </figure>
+                  <figure class="rounded-3xl bg-neutral-100 p-5 shadow-md">
+                    <img
+                      class="mb-4 h-48 w-full rounded-2xl object-cover"
+                      src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                      alt="Modern design"
+                    />
+                    <figcaption class="text-base leading-7 text-neutral-800">
+                      Modern design and smooth experience.
+                    </figcaption>
+                  </figure>
 
-                <figure>
-                  <img
-                    src="https://images.unsplash.com/photo-1552664730-d307ca884978"
-                    alt="Support"
-                  />
-                  <figcaption>High quality service and support.</figcaption>
-                </figure>
+                  <figure class="rounded-3xl bg-neutral-100 p-5 shadow-md">
+                    <img
+                      class="mb-4 h-48 w-full rounded-2xl object-cover"
+                      src="https://images.unsplash.com/photo-1552664730-d307ca884978"
+                      alt="Support"
+                    />
+                    <figcaption class="text-base leading-7 text-neutral-800">
+                      High quality service and support.
+                    </figcaption>
+                  </figure>
 
-                <figure>
-                  <img
-                    src="https://images.unsplash.com/photo-1531297484001-80022131f5a1"
-                    alt="Works on all devices"
-                  />
-                  <figcaption>Works on all modern devices.</figcaption>
-                </figure>
+                  <figure class="rounded-3xl bg-neutral-100 p-5 shadow-md">
+                    <img
+                      class="mb-4 h-48 w-full rounded-2xl object-cover"
+                      src="https://images.unsplash.com/photo-1531297484001-80022131f5a1"
+                      alt="Works on all devices"
+                    />
+                    <figcaption class="text-base leading-7 text-neutral-800">
+                      Works on all modern devices.
+                    </figcaption>
+                  </figure>
+                </div>
               </div>
             </div>
-            <!-- todo: bg=greyBgDark -->
-            <div id="priceSection">
-              <h2>Get awesome features, without extra charges</h2>
-              <p class="priceIntro">
-                Choose a plan that fits your needs. Upgrade or cancel anytime.
-              </p>
 
-              <div class="cardRow">
-                <article class="cardLong" id="ahmedPriceFinal-free">
-                  <div class="planTop">
-                    <div class="planIcon" aria-hidden="true">✨</div>
-                    <div>
-                      <h3>Free</h3>
-                      <p class="planTag">For getting started</p>
+            <div id="priceSection" class="bg-neutral-300 px-6 py-16">
+              <div class="mx-auto max-w-7xl">
+                <h2
+                  class="mx-auto mb-4 max-w-4xl text-center text-4xl font-bold text-neutral-950"
+                >
+                  Get awesome features, without extra charges
+                </h2>
+
+                <p
+                  class="mx-auto mb-12 max-w-2xl text-center text-lg leading-8 text-neutral-700"
+                >
+                  Choose a plan that fits your needs. Upgrade or cancel anytime.
+                </p>
+
+                <div class="grid gap-8 lg:grid-cols-3">
+                  <article
+                    class="rounded-3xl bg-neutral-100 p-8 shadow-md"
+                    id="ahmedPriceFinal-free"
+                  >
+                    <div class="mb-6 flex items-center gap-4">
+                      <div
+                        class="flex h-12 w-12 items-center justify-center rounded-full bg-neutral-200 text-xl"
+                        aria-hidden="true"
+                      >
+                        ✨
+                      </div>
+                      <div>
+                        <h3 class="text-2xl font-bold text-neutral-950">
+                          Free
+                        </h3>
+                        <p class="text-sm text-neutral-500">
+                          For getting started
+                        </p>
+                      </div>
                     </div>
-                  </div>
 
-                  <p class="price"><span class="currency">$</span>0</p>
-                  <p class="priceNote">No credit card needed</p>
+                    <p class="mb-2 text-5xl font-bold text-neutral-950">
+                      <span class="text-2xl align-top">$</span>0
+                    </p>
+                    <p class="mb-6 text-base text-neutral-500">
+                      No credit card needed
+                    </p>
 
-                  <ul class="planFeatures">
-                    <li>Basic task boards</li>
-                    <li>1 workspace</li>
-                    <li>Community support</li>
-                  </ul>
+                    <ul class="mb-8 space-y-3 text-base text-neutral-800">
+                      <li>Basic task boards</li>
+                      <li>1 workspace</li>
+                      <li>Community support</li>
+                    </ul>
 
-                  <button class="planBtn">Start free</button>
-                </article>
+                    <button
+                      class="rounded-full bg-neutral-950 px-6 py-3 text-base font-semibold text-neutral-50"
+                    >
+                      Start free
+                    </button>
+                  </article>
 
-                <article class="cardLong featured" id="ahmedPriceFinal-pro">
-                  <div class="badge">Most popular</div>
-
-                  <div class="planTop">
-                    <div class="planIcon" aria-hidden="true">🚀</div>
-                    <div>
-                      <h3>Pro</h3>
-                      <p class="planTag">For focused teams</p>
+                  <article
+                    class="relative rounded-3xl bg-neutral-950 p-8 text-neutral-50 shadow-lg"
+                    id="ahmedPriceFinal-pro"
+                  >
+                    <div
+                      class="absolute right-6 top-6 rounded-full bg-neutral-100 px-3 py-1 text-sm font-medium text-neutral-950"
+                    >
+                      Most popular
                     </div>
-                  </div>
 
-                  <p class="price"><span class="currency">$</span>40</p>
-                  <p class="priceNote">per month, billed monthly</p>
-
-                  <ul class="planFeatures">
-                    <li>Everything in Free</li>
-                    <li>Unlimited projects</li>
-                    <li>Priority support</li>
-                  </ul>
-
-                  <button class="planBtn">Get Pro</button>
-                </article>
-
-                <article class="cardLong" id="ahmedPriceFinal-premium">
-                  <div class="planTop">
-                    <div class="planIcon" aria-hidden="true">🏆</div>
-                    <div>
-                      <h3>Premium</h3>
-                      <p class="planTag">For scaling fast</p>
+                    <div class="mb-6 flex items-center gap-4">
+                      <div
+                        class="flex h-12 w-12 items-center justify-center rounded-full bg-neutral-800 text-xl"
+                        aria-hidden="true"
+                      >
+                        🚀
+                      </div>
+                      <div>
+                        <h3 class="text-2xl font-bold">Pro</h3>
+                        <p class="text-sm text-neutral-400">
+                          For focused teams
+                        </p>
+                      </div>
                     </div>
-                  </div>
 
-                  <p class="price"><span class="currency">$</span>99</p>
-                  <p class="priceNote">per month, billed monthly</p>
+                    <p class="mb-2 text-5xl font-bold">
+                      <span class="text-2xl align-top">$</span>40
+                    </p>
+                    <p class="mb-6 text-base text-neutral-400">
+                      per month, billed monthly
+                    </p>
 
-                  <ul class="planFeatures">
-                    <li>Everything in Pro</li>
-                    <li>24/7 support</li>
-                    <li>Unlimited devices</li>
-                  </ul>
+                    <ul class="mb-8 space-y-3 text-base text-neutral-200">
+                      <li>Everything in Free</li>
+                      <li>Unlimited projects</li>
+                      <li>Priority support</li>
+                    </ul>
 
-                  <button class="planBtn">Get Premium</button>
-                </article>
+                    <button
+                      class="rounded-full bg-neutral-100 px-6 py-3 text-base font-semibold text-neutral-950"
+                    >
+                      Get Pro
+                    </button>
+                  </article>
+
+                  <article
+                    class="rounded-3xl bg-neutral-100 p-8 shadow-md"
+                    id="ahmedPriceFinal-premium"
+                  >
+                    <div class="mb-6 flex items-center gap-4">
+                      <div
+                        class="flex h-12 w-12 items-center justify-center rounded-full bg-neutral-200 text-xl"
+                        aria-hidden="true"
+                      >
+                        🏆
+                      </div>
+                      <div>
+                        <h3 class="text-2xl font-bold text-neutral-950">
+                          Premium
+                        </h3>
+                        <p class="text-sm text-neutral-500">For scaling fast</p>
+                      </div>
+                    </div>
+
+                    <p class="mb-2 text-5xl font-bold text-neutral-950">
+                      <span class="text-2xl align-top">$</span>99
+                    </p>
+                    <p class="mb-6 text-base text-neutral-500">
+                      per month, billed monthly
+                    </p>
+
+                    <ul class="mb-8 space-y-3 text-base text-neutral-800">
+                      <li>Everything in Pro</li>
+                      <li>24/7 support</li>
+                      <li>Unlimited devices</li>
+                    </ul>
+
+                    <button
+                      class="rounded-full bg-neutral-950 px-6 py-3 text-base font-semibold text-neutral-50"
+                    >
+                      Get Premium
+                    </button>
+                  </article>
+                </div>
               </div>
             </div>
+
             <div id="page3">
               <div id="socialMediaSection">
                 <h2>Your product</h2>
