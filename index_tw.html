@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       * {
-        border: 1px solid hotpink;
+        /* border: 1px solid hotpink; */
       }
 
       @theme {
@@ -25,42 +25,51 @@
     </style>
   </head>
   <body class="bg-greyBgDark">
-    <header class="flex h-[142px] w-full items-center bg-navBg">
+    <header
+      class="flex h-[142px] w-full items-center bg-navBg max-[1000px]:h-auto max-[1000px]:items-start"
+    >
       <nav class="w-full flex-1">
         <ul
           id="navBar"
-          class="flex h-full w-full list-none items-center gap-x-3.5 px-[3.7rem] pr-18 bg-navBg"
+          class="flex h-full w-full list-none items-center gap-x-3.5 px-[3.7rem] bg-navBg max-[1000px]:h-auto max-[1000px]:flex-wrap max-[1000px]:px-4 max-[1000px]:py-4 max-[1000px]:gap-y-2 max-[1000px]:gap-x-[0.2rem] max-[1000px]:justify-around"
         >
-          <li
-            class="mr-auto block bg-basicBitchWhite px-7 py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton"
-          >
-            Your cool product
+          <li class="mr-auto max-[1000px]:basis-full max-[1000px]:mt-[0.3rem]">
+            <a
+              href="#"
+              class="block bg-basicBitchWhite px-7 py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton max-[1000px]:px-[0.7rem] max-[1000px]:py-[0.1rem] max-[1000px]:text-[24px] max-[1000px]:text-center"
+            >
+              Your cool product
+            </a>
           </li>
+
           <li>
             <a
               href="#advertisingSection"
-              class="block bg-basicBitchWhite px-[30px] py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton"
+              class="block bg-basicBitchWhite px-[30px] py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton max-[1000px]:px-[0.7rem] max-[1000px]:py-[0.1rem] max-[1000px]:text-[24px] max-[1000px]:text-center"
               >Home</a
             >
           </li>
+
           <li>
             <a
               href="#featuresSection"
-              class="block bg-basicBitchWhite px-5 py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton"
+              class="block bg-basicBitchWhite px-5 py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton max-[1000px]:px-[0.7rem] max-[1000px]:py-[0.1rem] max-[1000px]:text-[24px] max-[1000px]:text-center"
               >Features</a
             >
           </li>
+
           <li>
             <a
               href="#priceSection"
-              class="block bg-basicBitchWhite px-[30px] py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton"
+              class="block bg-basicBitchWhite px-[30px] py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton max-[1000px]:px-[0.7rem] max-[1000px]:py-[0.1rem] max-[1000px]:text-[24px] max-[1000px]:text-center"
               >Prices</a
             >
           </li>
+
           <li>
             <a
               href="#socialMediaSection"
-              class="block bg-basicBitchWhite px-[60px] py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton"
+              class="block bg-basicBitchWhite px-[60px] py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton max-[1000px]:px-[0.7rem] max-[1000px]:py-[0.1rem] max-[1000px]:text-[24px] max-[1000px]:text-center"
               >Try for free</a
             >
           </li>
