@@ -138,9 +138,18 @@
         </div>
       </div>
       <div id="page1">
-        <div id="videoSection">
-          <h2 id="videoText">Check out our video:</h2>
-          <div id="videoBox">
+        <div
+          id="videoSection"
+          class="flex h-[563px] flex-col items-center justify-start bg-greyBgVideo text-basicBitchWhite"
+        >
+          <h2 id="videoText" class="mt-14 text-[48px] max-[1000px]:text-[32px]">
+            Check out our video:
+          </h2>
+
+          <div
+            id="videoBox"
+            class="mt-6 flex w-full justify-center overflow-hidden rounded-xl max-[1000px]:h-[65%] max-[1000px]:w-3/4"
+          >
             <a
               class="videoContainer"
               href="https://youtu.be/dQw4w9WgXcQ?si=NfHaknlWNZCmTQTd"
@@ -149,9 +158,10 @@
               aria-label="Open video in a new tab"
             >
               <img
-                src="assets/img/videoSection/wizardram.png"
+                src="assets/img/video_section/wizardram.png"
                 alt="Video thumbnail"
                 loading="lazy"
+                class="block h-[340px] w-[717px] object-cover max-[1000px]:h-auto max-[1000px]:w-full max-[1000px]:object-contain"
               />
             </a>
           </div>
