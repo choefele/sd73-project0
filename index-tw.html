@@ -25,54 +25,14 @@
     </style>
   </head>
   <body class="bg-greyBgDark">
-    <header
-      class="flex h-[142px] w-full items-center bg-navBg max-[1000px]:h-auto max-[1000px]:items-start"
-    >
-      <nav class="w-full flex-1">
-        <ul
-          id="navBar"
-          class="flex h-full w-full list-none items-center gap-x-3.5 px-[3.7rem] bg-navBg max-[1000px]:h-auto max-[1000px]:flex-wrap max-[1000px]:px-4 max-[1000px]:py-4 max-[1000px]:gap-y-2 max-[1000px]:gap-x-[0.2rem] max-[1000px]:justify-around"
-        >
-          <li class="mr-auto max-[1000px]:basis-full max-[1000px]:mt-[0.3rem]">
-            <a
-              href="#"
-              class="block bg-basicBitchWhite px-7 py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton max-[1000px]:px-[0.7rem] max-[1000px]:py-[0.1rem] max-[1000px]:text-[24px] max-[1000px]:text-center"
-            >
-              Your cool product
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#advertisingSection"
-              class="block bg-basicBitchWhite px-[30px] py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton max-[1000px]:px-[0.7rem] max-[1000px]:py-[0.1rem] max-[1000px]:text-[24px] max-[1000px]:text-center"
-              >Home</a
-            >
-          </li>
-
-          <li>
-            <a
-              href="#featuresSection"
-              class="block bg-basicBitchWhite px-5 py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton max-[1000px]:px-[0.7rem] max-[1000px]:py-[0.1rem] max-[1000px]:text-[24px] max-[1000px]:text-center"
-              >Features</a
-            >
-          </li>
-
-          <li>
-            <a
-              href="#priceSection"
-              class="block bg-basicBitchWhite px-[30px] py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton max-[1000px]:px-[0.7rem] max-[1000px]:py-[0.1rem] max-[1000px]:text-[24px] max-[1000px]:text-center"
-              >Prices</a
-            >
-          </li>
-
-          <li>
-            <a
-              href="#socialMediaSection"
-              class="block bg-basicBitchWhite px-[60px] py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton max-[1000px]:px-[0.7rem] max-[1000px]:py-[0.1rem] max-[1000px]:text-[24px] max-[1000px]:text-center"
-              >Try for free</a
-            >
-          </li>
+    <header>
+      <nav>
+        <ul id="navBar">
+          <li><a id="logo" href="#">Your cool product</a></li>
+          <li><a href="#advertisingSection">Home</a></li>
+          <li><a href="#featuresSection">Features</a></li>
+          <li><a href="#priceSection">Prices</a></li>
+          <li><a href="#socialMediaSection">Try for free</a></li>
         </ul>
       </nav>
     </header>
@@ -169,18 +129,9 @@
       </div>
 
       <div id="page1">
-        <div
-          id="videoSection"
-          class="flex lg:h-[563px] md:h-[500px] sm:h-[450px] flex-col items-center justify-start bg-greyBgVideo text-basicBitchWhite"
-        >
-          <h2 id="videoText" class="mt-14 text-[48px] max-[1000px]:text-[24px]">
-            Check out our video:
-          </h2>
-
-          <div
-            id="videoBox"
-            class="mt-6 flex w-full justify-center overflow-hidden rounded-xl max-[1000px]:h-[65%] max-[1000px]:w-3/4"
-          >
+        <div id="videoSection">
+          <h2 id="videoText">Check out our video:</h2>
+          <div id="videoBox">
             <a
               class="videoContainer"
               href="https://youtu.be/dQw4w9WgXcQ?si=NfHaknlWNZCmTQTd"
@@ -189,10 +140,9 @@
               aria-label="Open video in a new tab"
             >
               <img
-                src="assets/img/video_section/wizardram.png"
+                src="assets/img/videoSection/wizardram.png"
                 alt="Video thumbnail"
                 loading="lazy"
-                class="block h-[340px] w-[717px] object-cover max-[1000px]:h-auto max-[1000px]:w-full max-[1000px]:object-contain mb-5"
               />
             </a>
           </div>
@@ -468,62 +418,25 @@
             </div>
 
             <div id="page3">
-              <div
-                id="socialMediaSection"
-                class="flex h-[580px] flex-col items-center justify-center bg-greyBgLight"
-              >
-                <h2
-                  class="text-center text-[36px] font-normal text-basicBitchBlack"
-                >
-                  Your product
-                </h2>
-
-                <ul
-                  id="navLower"
-                  class="mt-5 flex justify-center gap-10 text-[24px]"
-                >
-                  <li>
-                    <a href="#advertisingSection" class="font-light text-lg"
-                      >Home</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#featuresSection" class="font-light text-lg"
-                      >Features</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#priceSection" class="font-light text-lg"
-                      >Prices</a
-                    >
-                  </li>
+              <div id="socialMediaSection">
+                <h2>Your product</h2>
+                <ul id="navLower">
+                  <li><a href="#advertisingSection">Home</a></li>
+                  <li><a href="#featuresSection">Features</a></li>
+                  <li><a href="#priceSection">Prices</a></li>
                 </ul>
-
-                <div class="socialRow mt-10 flex justify-center gap-8">
+                <div class="socialRow">
                   <a href="https://www.facebook.com/" target="_blank">
-                    <img
-                      class="h-[50px] w-[50px] object-cover"
-                      src="assets/img/social_media/f4.png"
-                      alt="Facebook"
-                    />
+                    <img src="assets/img/social_media/f4.png" alt="Facebook" />
                   </a>
                   <a href="https://www.instagram.com/?hl=en" target="_blank">
-                    <img
-                      class="h-[50px] w-[50px] object-cover"
-                      src="assets/img/social_media/ig.png"
-                      alt="Instagram"
-                    />
+                    <img src="assets/img/social_media/ig.png" alt="Instagram" />
                   </a>
                   <a href="https://www.youtube.com/" target="_blank">
-                    <img
-                      class="h-[50px] w-[50px] object-cover"
-                      src="assets/img/social_media/yt.png"
-                      alt="YouTube"
-                    />
+                    <img src="assets/img/social_media/yt.png" alt="YouTube" />
                   </a>
                   <a href="https://www.linkedin.com/" target="_blank">
                     <img
-                      class="h-[50px] w-[50px] object-cover"
                       src="assets/img/social_media/linkedin.png"
                       alt="LinkedIn"
                     />
