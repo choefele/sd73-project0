@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Reconstruction of a Figma Design</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      * {
+        /* border: 1px solid hotpink; */
+      }
+
+      @theme {
+        --font-sans: "Roboto", sans-serif;
+
+        --color-basicBitchBlack: rgba(18, 18, 18, 1);
+        --color-basicBitchWhite: rgba(235, 235, 235, 1);
+        --color-greyBgLight: rgba(237, 237, 237, 1);
+        --color-greyBgDark: rgba(196, 196, 196, 1);
+        --color-greyBgVideo: rgba(171, 171, 171, 1);
+        --color-navBg: rgba(143, 143, 143, 1);
+        --color-cardPriceButton: rgba(215, 215, 215, 1);
+        --color-transparent: rgba(0, 0, 0, 0);
+      }
+    </style>
+  </head>
+  <body class="bg-greyBgDark">
+    <header
+      class="flex h-[142px] w-full items-center bg-navBg max-[1000px]:h-auto max-[1000px]:items-start"
+    >
+      <nav class="w-full flex-1">
+        <ul
+          id="navBar"
+          class="flex h-full w-full list-none items-center gap-x-3.5 px-[3.7rem] bg-navBg max-[1000px]:h-auto max-[1000px]:flex-wrap max-[1000px]:px-4 max-[1000px]:py-4 max-[1000px]:gap-y-2 max-[1000px]:gap-x-[0.2rem] max-[1000px]:justify-around"
+        >
+          <li class="mr-auto max-[1000px]:basis-full max-[1000px]:mt-[0.3rem]">
+            <a
+              href="#"
+              class="block bg-basicBitchWhite px-7 py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton max-[1000px]:px-[0.7rem] max-[1000px]:py-[0.1rem] max-[1000px]:text-[24px] max-[1000px]:text-center"
+            >
+              Your cool product
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#advertisingSection"
+              class="block bg-basicBitchWhite px-[30px] py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton max-[1000px]:px-[0.7rem] max-[1000px]:py-[0.1rem] max-[1000px]:text-[24px] max-[1000px]:text-center"
+              >Home</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="#featuresSection"
+              class="block bg-basicBitchWhite px-5 py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton max-[1000px]:px-[0.7rem] max-[1000px]:py-[0.1rem] max-[1000px]:text-[24px] max-[1000px]:text-center"
+              >Features</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="#priceSection"
+              class="block bg-basicBitchWhite px-[30px] py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton max-[1000px]:px-[0.7rem] max-[1000px]:py-[0.1rem] max-[1000px]:text-[24px] max-[1000px]:text-center"
+              >Prices</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="#socialMediaSection"
+              class="block bg-basicBitchWhite px-[60px] py-[18px] text-[26px] text-basicBitchBlack no-underline border-t-[1.5px] border-r-[1.5px] border-b-[1.5px] border-l-[1.5px] border-transparent [border-style:inset] hover:border-t-basicBitchBlack hover:border-l-basicBitchBlack hover:border-b-basicBitchWhite hover:border-r-basicBitchWhite hover:bg-cardPriceButton max-[1000px]:px-[0.7rem] max-[1000px]:py-[0.1rem] max-[1000px]:text-[24px] max-[1000px]:text-center"
+              >Try for free</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="page0">
+        <div
+          id="advertisingSection"
+          class="mx-auto flex max-w-7xl flex-col items-center justify-center gap-10 px-6 py-16 lg:flex-row lg:items-stretch"
+        >
+          <div
+            id="cardSquare"
+            class="flex w-full max-w-xl flex-col rounded-3xl bg-neutral-950 p-10 text-neutral-50 shadow-lg"
+          >
+            <button
+              class="mb-8 w-fit rounded-full bg-neutral-800 px-4 py-2 text-sm font-medium"
+            >
+              #1 Editors Choice App of 2020
+            </button>
+
+            <h1 class="mb-8 text-5xl font-bold leading-tight lg:text-6xl">
+              Manage your work in one place
+            </h1>
+
+            <p class="mb-10 max-w-md text-lg leading-8 text-neutral-200">
+              Plan tasks, track progress, and stay focused with a clean, simple
+              workflow.
+            </p>
+
+            <button
+              class="mt-auto w-fit rounded-full bg-neutral-100 px-6 py-3 text-base font-semibold text-neutral-950"
+            >
+              Try for free
+            </button>
+          </div>
+
+          <div
+            id="cardLongRounded"
+            class="flex w-full max-w-sm flex-col rounded-3xl bg-neutral-100 p-5 text-neutral-950 shadow-lg"
+          >
+            <img
+              class="mb-5 h-56 w-full rounded-3xl object-cover"
+              src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=70"
+              alt="App demo preview"
+            />
+
+            <h3 class="mb-2 text-3xl font-bold">Quick start demo</h3>
+            <p class="mb-5 text-base text-neutral-500">WBS Coding School</p>
+            <p class="mb-8 text-lg leading-8 text-neutral-800">
+              See how the app helps you organize your day in minutes.
+            </p>
+
+            <button
+              class="mt-auto w-fit rounded-full bg-neutral-950 px-6 py-3 text-base font-semibold text-neutral-50"
+            >
+              Continue
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="bg-greyBgLight text-basicBitchBlack p-4"
+          id="trustedBySection"
+        >
+          <h2 class="text-center text-4xl p-4">Trusted by companies like</h2>
+          <div class="flex items-center justify-center gap-12 p-4">
+            <img
+              class="min-w-0 grow-0 shrink basis-auto"
+              src="assets/img/svg/trusted_by/logoipsum-348.svg"
+              alt="Company Logo 1"
+            />
+            <img
+              class="min-w-0 grow-0 shrink basis-auto"
+              src="assets/img/svg/trusted_by/logoipsum-378.svg"
+              alt="Company Logo 2"
+            />
+            <img
+              class="min-w-0 grow-0 shrink basis-auto"
+              src="assets/img/svg/trusted_by/logoipsum-391.svg"
+              alt="Company Logo 3"
+            />
+            <img
+              class="min-w-0 grow-0 shrink basis-auto"
+              src="assets/img/svg/trusted_by/logoipsum-404.svg"
+              alt="Company Logo 4"
+            />
+            <img
+              class="min-w-0 grow-0 shrink basis-auto"
+              src="assets/img/svg/trusted_by/logoipsum-410.svg"
+              alt="Company Logo 5"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="page1">
+        <div
+          id="videoSection"
+          class="flex lg:h-[563px] md:h-[500px] sm:h-[450px] flex-col items-center justify-start bg-greyBgVideo text-basicBitchWhite"
+        >
+          <h2 id="videoText" class="mt-14 text-[48px] max-[1000px]:text-[24px]">
+            Check out our video:
+          </h2>
+
+          <div
+            id="videoBox"
+            class="mt-6 flex w-full justify-center overflow-hidden rounded-xl max-[1000px]:h-[65%] max-[1000px]:w-3/4"
+          >
+            <a
+              class="videoContainer"
+              href="https://youtu.be/dQw4w9WgXcQ?si=NfHaknlWNZCmTQTd"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open video in a new tab"
+            >
+              <img
+                src="assets/img/video_section/wizardram.png"
+                alt="Video thumbnail"
+                loading="lazy"
+                class="block h-[340px] w-[717px] object-cover max-[1000px]:h-auto max-[1000px]:w-full max-[1000px]:object-contain mb-5"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div id="featuresSection">
+          <div
+            id="appFeaturesSection"
+            class="bg-greyBgDark text-basicBitchBlack p-4"
+          >
+            <h2 class="text-center text-4xl p-4">Awsome apps features</h2>
+            <p class="text-center text-xl p-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+              amet mass.
+            </p>
+            <div class="flex gap-4 p-4">
+              <figure class="min-w-0">
+                <img
+                  class="w-full h-auto rounded-full p-6"
+                  src="https://picsum.photos/id/3/400"
+                  alt="Feature 1"
+                />
+                <figcaption class="text-center text-base">
+                  Fast performance Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Sed sit amet
+                </figcaption>
+              </figure>
+              <figure class="min-w-0">
+                <img
+                  class="w-full h-auto rounded-full p-6"
+                  src="https://picsum.photos/id/20/400"
+                  alt="Feature 2"
+                />
+                <figcaption class="text-center text-base">
+                  Fast performance Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Sed sit amet
+                </figcaption>
+              </figure>
+              <figure class="min-w-0">
+                <img
+                  class="w-full h-auto rounded-full p-6"
+                  src="https://picsum.photos/id/36/400"
+                  alt="Feature 3"
+                />
+                <figcaption class="text-center text-base">
+                  Fast performance Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Sed sit amet
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div id="page2">
+            <div id="whyUsSection" class="bg-neutral-200 px-6 py-16">
+              <div class="mx-auto max-w-7xl">
+                <h2
+                  class="mb-12 text-center text-4xl font-bold text-neutral-950"
+                >
+                  Why you should choose our app
+                </h2>
+
+                <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                  <figure class="rounded-3xl bg-neutral-100 p-5 shadow-md">
+                    <img
+                      class="mb-4 h-48 w-full rounded-2xl object-cover"
+                      src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+                      alt="Fast performance"
+                    />
+                    <figcaption class="text-base leading-7 text-neutral-800">
+                      Fast performance. Our app works quickly and efficiently.
+                    </figcaption>
+                  </figure>
+
+                  <figure class="rounded-3xl bg-neutral-100 p-5 shadow-md">
+                    <img
+                      class="mb-4 h-48 w-full rounded-2xl object-cover"
+                      src="https://images.unsplash.com/photo-1551434678-e076c223a692"
+                      alt="Easy to use"
+                    />
+                    <figcaption class="text-base leading-7 text-neutral-800">
+                      Easy to use interface for all users.
+                    </figcaption>
+                  </figure>
+
+                  <figure class="rounded-3xl bg-neutral-100 p-5 shadow-md">
+                    <img
+                      class="mb-4 h-48 w-full rounded-2xl object-cover"
+                      src="https://images.unsplash.com/photo-1563986768609-322da13575f3"
+                      alt="Reliable and secure"
+                    />
+                    <figcaption class="text-base leading-7 text-neutral-800">
+                      Reliable and secure platform.
+                    </figcaption>
+                  </figure>
+
+                  <figure class="rounded-3xl bg-neutral-100 p-5 shadow-md">
+                    <img
+                      class="mb-4 h-48 w-full rounded-2xl object-cover"
+                      src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                      alt="Modern design"
+                    />
+                    <figcaption class="text-base leading-7 text-neutral-800">
+                      Modern design and smooth experience.
+                    </figcaption>
+                  </figure>
+
+                  <figure class="rounded-3xl bg-neutral-100 p-5 shadow-md">
+                    <img
+                      class="mb-4 h-48 w-full rounded-2xl object-cover"
+                      src="https://images.unsplash.com/photo-1552664730-d307ca884978"
+                      alt="Support"
+                    />
+                    <figcaption class="text-base leading-7 text-neutral-800">
+                      High quality service and support.
+                    </figcaption>
+                  </figure>
+
+                  <figure class="rounded-3xl bg-neutral-100 p-5 shadow-md">
+                    <img
+                      class="mb-4 h-48 w-full rounded-2xl object-cover"
+                      src="https://images.unsplash.com/photo-1531297484001-80022131f5a1"
+                      alt="Works on all devices"
+                    />
+                    <figcaption class="text-base leading-7 text-neutral-800">
+                      Works on all modern devices.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+
+            <div id="priceSection" class="bg-neutral-300 px-6 py-16">
+              <div class="mx-auto max-w-7xl">
+                <h2
+                  class="mx-auto mb-4 max-w-4xl text-center text-4xl font-bold text-neutral-950"
+                >
+                  Get awesome features, without extra charges
+                </h2>
+
+                <p
+                  class="mx-auto mb-12 max-w-2xl text-center text-lg leading-8 text-neutral-700"
+                >
+                  Choose a plan that fits your needs. Upgrade or cancel anytime.
+                </p>
+
+                <div class="grid gap-8 lg:grid-cols-3">
+                  <article
+                    class="rounded-3xl bg-neutral-100 p-8 shadow-md"
+                    id="ahmedPriceFinal-free"
+                  >
+                    <div class="mb-6 flex items-center gap-4">
+                      <div
+                        class="flex h-12 w-12 items-center justify-center rounded-full bg-neutral-200 text-xl"
+                        aria-hidden="true"
+                      >
+                        ✨
+                      </div>
+                      <div>
+                        <h3 class="text-2xl font-bold text-neutral-950">
+                          Free
+                        </h3>
+                        <p class="text-sm text-neutral-500">
+                          For getting started
+                        </p>
+                      </div>
+                    </div>
+
+                    <p class="mb-2 text-5xl font-bold text-neutral-950">
+                      <span class="text-2xl align-top">$</span>0
+                    </p>
+                    <p class="mb-6 text-base text-neutral-500">
+                      No credit card needed
+                    </p>
+
+                    <ul class="mb-8 space-y-3 text-base text-neutral-800">
+                      <li>Basic task boards</li>
+                      <li>1 workspace</li>
+                      <li>Community support</li>
+                    </ul>
+
+                    <button
+                      class="rounded-full bg-neutral-950 px-6 py-3 text-base font-semibold text-neutral-50"
+                    >
+                      Start free
+                    </button>
+                  </article>
+
+                  <article
+                    class="relative rounded-3xl bg-neutral-950 p-8 text-neutral-50 shadow-lg"
+                    id="ahmedPriceFinal-pro"
+                  >
+                    <div
+                      class="absolute right-6 top-6 rounded-full bg-neutral-100 px-3 py-1 text-sm font-medium text-neutral-950"
+                    >
+                      Most popular
+                    </div>
+
+                    <div class="mb-6 flex items-center gap-4">
+                      <div
+                        class="flex h-12 w-12 items-center justify-center rounded-full bg-neutral-800 text-xl"
+                        aria-hidden="true"
+                      >
+                        🚀
+                      </div>
+                      <div>
+                        <h3 class="text-2xl font-bold">Pro</h3>
+                        <p class="text-sm text-neutral-400">
+                          For focused teams
+                        </p>
+                      </div>
+                    </div>
+
+                    <p class="mb-2 text-5xl font-bold">
+                      <span class="text-2xl align-top">$</span>40
+                    </p>
+                    <p class="mb-6 text-base text-neutral-400">
+                      per month, billed monthly
+                    </p>
+
+                    <ul class="mb-8 space-y-3 text-base text-neutral-200">
+                      <li>Everything in Free</li>
+                      <li>Unlimited projects</li>
+                      <li>Priority support</li>
+                    </ul>
+
+                    <button
+                      class="rounded-full bg-neutral-100 px-6 py-3 text-base font-semibold text-neutral-950"
+                    >
+                      Get Pro
+                    </button>
+                  </article>
+
+                  <article
+                    class="rounded-3xl bg-neutral-100 p-8 shadow-md"
+                    id="ahmedPriceFinal-premium"
+                  >
+                    <div class="mb-6 flex items-center gap-4">
+                      <div
+                        class="flex h-12 w-12 items-center justify-center rounded-full bg-neutral-200 text-xl"
+                        aria-hidden="true"
+                      >
+                        🏆
+                      </div>
+                      <div>
+                        <h3 class="text-2xl font-bold text-neutral-950">
+                          Premium
+                        </h3>
+                        <p class="text-sm text-neutral-500">For scaling fast</p>
+                      </div>
+                    </div>
+
+                    <p class="mb-2 text-5xl font-bold text-neutral-950">
+                      <span class="text-2xl align-top">$</span>99
+                    </p>
+                    <p class="mb-6 text-base text-neutral-500">
+                      per month, billed monthly
+                    </p>
+
+                    <ul class="mb-8 space-y-3 text-base text-neutral-800">
+                      <li>Everything in Pro</li>
+                      <li>24/7 support</li>
+                      <li>Unlimited devices</li>
+                    </ul>
+
+                    <button
+                      class="rounded-full bg-neutral-950 px-6 py-3 text-base font-semibold text-neutral-50"
+                    >
+                      Get Premium
+                    </button>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div id="page3">
+              <div
+                id="socialMediaSection"
+                class="flex h-[580px] flex-col items-center justify-center bg-greyBgLight"
+              >
+                <h2
+                  class="text-center text-[36px] font-normal text-basicBitchBlack"
+                >
+                  Your product
+                </h2>
+
+                <ul
+                  id="navLower"
+                  class="mt-5 flex justify-center gap-10 text-[24px]"
+                >
+                  <li>
+                    <a href="#advertisingSection" class="font-light text-lg"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#featuresSection" class="font-light text-lg"
+                      >Features</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#priceSection" class="font-light text-lg"
+                      >Prices</a
+                    >
+                  </li>
+                </ul>
+
+                <div class="socialRow mt-10 flex justify-center gap-8">
+                  <a href="https://www.facebook.com/" target="_blank">
+                    <img
+                      class="h-[50px] w-[50px] object-cover"
+                      src="assets/img/social_media/f4.png"
+                      alt="Facebook"
+                    />
+                  </a>
+                  <a href="https://www.instagram.com/?hl=en" target="_blank">
+                    <img
+                      class="h-[50px] w-[50px] object-cover"
+                      src="assets/img/social_media/ig.png"
+                      alt="Instagram"
+                    />
+                  </a>
+                  <a href="https://www.youtube.com/" target="_blank">
+                    <img
+                      class="h-[50px] w-[50px] object-cover"
+                      src="assets/img/social_media/yt.png"
+                      alt="YouTube"
+                    />
+                  </a>
+                  <a href="https://www.linkedin.com/" target="_blank">
+                    <img
+                      class="h-[50px] w-[50px] object-cover"
+                      src="assets/img/social_media/linkedin.png"
+                      alt="LinkedIn"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
